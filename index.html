@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.0"> </script>
+</head>
+
+<body>
+	<h1>Draw a curve in either one of the canvases</h1>
+	<main style="display: grid; grid-template-columns: repeat(auto-fill, 500px); grid-gap: 40px;">
+		<div style="display: flex; flex-direction: column">
+			<h3>Polynomial regression (degree 4)</h3>
+			<canvas id="polynomial" style="outline: 2px solid black" width="500" height="500"></canvas>
+			<button style="height: 50px" id="clearPoly">Clear</button>
+			<script src="fit_polynomial.js"></script>
+		</div>
+
+		<div style="display: flex; flex-direction: column">
+			<h3>Neural network (Fully connected - 3 layers)</h3>
+			<canvas id="model" style="outline: 2px solid black" width="500" height="500"></canvas>
+			<button style="height: 50px" id="clearModel">Clear</button>
+			<script src="fit_model.js"></script>
+		</div>
+	</main>
+</body>
+
+</html>
